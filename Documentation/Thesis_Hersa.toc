@@ -1,44 +1,44 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}DEFINICI\IeC {\'O}N DEL PROYECTO}{9}
-\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{9}
-\contentsline {section}{\numberline {1.2}Antecedentes}{9}
-\contentsline {section}{\numberline {1.3}M\IeC {\'e}todolog\IeC {\'\i }a}{9}
-\contentsline {section}{\numberline {1.4}Trabajo previo}{9}
-\contentsline {section}{\numberline {1.5}Planteamiento del problema}{9}
-\contentsline {section}{\numberline {1.6}Objetivo}{9}
-\contentsline {section}{\numberline {1.7}Alcances}{9}
-\contentsline {section}{\numberline {1.8}Equipo de trabajo}{9}
-\contentsline {chapter}{\numberline {2}CICLO 1. USUARIO}{11}
-\contentsline {section}{\numberline {2.1}Reto}{11}
-\contentsline {section}{\numberline {2.2}Usuario en contexto}{11}
-\contentsline {subsection}{\numberline {2.2.1}Observaciones}{11}
-\contentsline {subsection}{\numberline {2.2.2}Entrevistas}{11}
-\contentsline {subsection}{\numberline {2.2.3}Organizar y jerarquizaci\IeC {\'o}n de necesidades}{11}
-\contentsline {section}{\numberline {2.3}Soluciones actuales (mercado)}{11}
-\contentsline {section}{\numberline {2.4}Contexto pasado, presente y futuro}{11}
-\contentsline {subsection}{\numberline {2.4.1}Estad\IeC {\'\i }sticas, normas, reglamentos}{11}
-\contentsline {section}{\numberline {2.5}Factores cr\IeC {\'\i }ticos, hallazgos}{11}
-\contentsline {subsection}{\numberline {2.5.1}Necesidades seleccionadas}{11}
-\contentsline {chapter}{\numberline {3}CICLO 2. EXPERIENCIA}{13}
-\contentsline {section}{\numberline {3.1}Redefinici\IeC {\'o}n del reto}{13}
-\contentsline {section}{\numberline {3.2}Necesidad jerarquizada}{13}
-\contentsline {section}{\numberline {3.3}Objetivo (propuesta de valor)}{13}
-\contentsline {section}{\numberline {3.4}Requerimientos}{13}
-\contentsline {section}{\numberline {3.5}Escenarios}{13}
-\contentsline {section}{\numberline {3.6}Personajes}{13}
-\contentsline {section}{\numberline {3.7}Mapa de ruta}{13}
-\contentsline {section}{\numberline {3.8}Dise\IeC {\~n}o de experiencias}{13}
-\contentsline {section}{\numberline {3.9}Nuevas tecnolog\IeC {\'\i }as}{13}
-\contentsline {section}{\numberline {3.10}Factores cr\IeC {\'\i }ticos, hallazgos}{13}
-\contentsline {chapter}{\numberline {4}CICLO 3. PRODUCTO}{15}
-\contentsline {section}{\numberline {4.1}Redefinici\IeC {\'o}n del reto}{15}
-\contentsline {section}{\numberline {4.2}Principios de dise\IeC {\~n}o}{15}
-\contentsline {section}{\numberline {4.3}Requerimientos y especificaciones}{15}
-\contentsline {section}{\numberline {4.4}Generaci\IeC {\'o}n de conceptos}{15}
-\contentsline {section}{\numberline {4.5}Evaluaci\IeC {\'o}n de conceptos}{15}
-\contentsline {section}{\numberline {4.6}Selecci\IeC {\'o}n de concepto}{15}
-\contentsline {chapter}{\numberline {5}CICLO 4. PROTOTIPO}{17}
-\contentsline {section}{\numberline {5.1}Pruebas con usuarios}{17}
-\contentsline {section}{\numberline {5.2}Factores cr\IeC {\'\i }ticos y hallazgos}{17}
-\contentsline {chapter}{\numberline {6}CONCLUSIONES}{19}
-\contentsline {chapter}{\numberline {7}TRABAJO A FUTURO}{21}
+\contentsline {chapter}{\numberline {1}DEFINICI\IeC {\'O}N DEL PROYECTO}{1}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {1.2}Antecedentes}{1}
+\contentsline {section}{\numberline {1.3}M\IeC {\'e}todolog\IeC {\'\i }a}{1}
+\contentsline {section}{\numberline {1.4}Trabajo previo}{1}
+\contentsline {section}{\numberline {1.5}Planteamiento del problema}{1}
+\contentsline {section}{\numberline {1.6}Objetivo}{1}
+\contentsline {section}{\numberline {1.7}Alcances}{1}
+\contentsline {section}{\numberline {1.8}Equipo de trabajo}{1}
+\contentsline {chapter}{\numberline {2}CICLO 1. USUARIO}{3}
+\contentsline {section}{\numberline {2.1}Reto}{3}
+\contentsline {section}{\numberline {2.2}Usuario en contexto}{3}
+\contentsline {subsection}{\numberline {2.2.1}Observaciones}{3}
+\contentsline {subsection}{\numberline {2.2.2}Entrevistas}{3}
+\contentsline {subsection}{\numberline {2.2.3}Organizar y jerarquizaci\IeC {\'o}n de necesidades}{3}
+\contentsline {section}{\numberline {2.3}Soluciones actuales (mercado)}{3}
+\contentsline {section}{\numberline {2.4}Contexto pasado, presente y futuro}{3}
+\contentsline {subsection}{\numberline {2.4.1}Estad\IeC {\'\i }sticas, normas, reglamentos}{3}
+\contentsline {section}{\numberline {2.5}Factores cr\IeC {\'\i }ticos, hallazgos}{3}
+\contentsline {subsection}{\numberline {2.5.1}Necesidades seleccionadas}{3}
+\contentsline {chapter}{\numberline {3}CICLO 2. EXPERIENCIA}{5}
+\contentsline {section}{\numberline {3.1}Redefinici\IeC {\'o}n del reto}{5}
+\contentsline {section}{\numberline {3.2}Necesidad jerarquizada}{5}
+\contentsline {section}{\numberline {3.3}Objetivo (propuesta de valor)}{5}
+\contentsline {section}{\numberline {3.4}Requerimientos}{5}
+\contentsline {section}{\numberline {3.5}Escenarios}{5}
+\contentsline {section}{\numberline {3.6}Personajes}{5}
+\contentsline {section}{\numberline {3.7}Mapa de ruta}{5}
+\contentsline {section}{\numberline {3.8}Dise\IeC {\~n}o de experiencias}{5}
+\contentsline {section}{\numberline {3.9}Nuevas tecnolog\IeC {\'\i }as}{5}
+\contentsline {section}{\numberline {3.10}Factores cr\IeC {\'\i }ticos, hallazgos}{5}
+\contentsline {chapter}{\numberline {4}CICLO 3. PRODUCTO}{7}
+\contentsline {section}{\numberline {4.1}Redefinici\IeC {\'o}n del reto}{7}
+\contentsline {section}{\numberline {4.2}Principios de dise\IeC {\~n}o}{7}
+\contentsline {section}{\numberline {4.3}Requerimientos y especificaciones}{7}
+\contentsline {section}{\numberline {4.4}Generaci\IeC {\'o}n de conceptos}{7}
+\contentsline {section}{\numberline {4.5}Evaluaci\IeC {\'o}n de conceptos}{7}
+\contentsline {section}{\numberline {4.6}Selecci\IeC {\'o}n de concepto}{7}
+\contentsline {chapter}{\numberline {5}CICLO 4. PROTOTIPO}{9}
+\contentsline {section}{\numberline {5.1}Pruebas con usuarios}{9}
+\contentsline {section}{\numberline {5.2}Factores cr\IeC {\'\i }ticos y hallazgos}{9}
+\contentsline {chapter}{\numberline {6}CONCLUSIONES}{11}
+\contentsline {chapter}{\numberline {7}TRABAJO A FUTURO}{13}
