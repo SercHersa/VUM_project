@@ -42,9 +42,9 @@
 \contentsline {section}{\numberline {5.2}Factores cr\IeC {\'\i }ticos y hallazgos}{9}
 \contentsline {chapter}{\numberline {6}IDEAS DE MI PARTE}{11}
 \contentsline {section}{\numberline {6.1}DEFINIR. Reto, problem\IeC {\'a}tica, objetivo}{11}
-\contentsline {section}{\numberline {6.2}CONOCER. Contexto, estado del arte, benchmarking, an\IeC {\'a}logos y hom\IeC {\'o}logos}{11}
-\contentsline {section}{\numberline {6.3}GENERAR. Brainstorming}{11}
-\contentsline {section}{\numberline {6.4}PROBAR. Simuladores, maquetas, prototipos}{11}
-\contentsline {section}{\numberline {6.5}APRENDER. An\IeC {\'a}lisis de hallazgos}{11}
+\contentsline {section}{\numberline {6.2}CONOCER. Contexto, estado del arte, benchmarking, an\IeC {\'a}logos y hom\IeC {\'o}logos}{12}
+\contentsline {section}{\numberline {6.3}GENERAR. Brainstorming}{12}
+\contentsline {section}{\numberline {6.4}PROBAR. Simuladores, maquetas, prototipos}{12}
+\contentsline {section}{\numberline {6.5}APRENDER. An\IeC {\'a}lisis de hallazgos}{12}
 \contentsline {chapter}{\numberline {7}CONCLUSIONES}{13}
 \contentsline {chapter}{\numberline {8}TRABAJO A FUTURO}{15}

@@ -158,9 +158,44 @@ Se roban paquetes
 
 Significan un gasto elevado para las empresas de paquetería
 
-Modifican sus rutas de entregas para ir a lugares de su interés como comer, visitar a su novia, mamá, etc
+Modifican sus rutas de entregas para ir a lugares de su interés como comer, visitar a su novia, mamá, etc.
+
+Ya que el vehículo tiene la capacidad de ir a más de 25 km/hr, puede ser una velocidad a la que sea peligroso para el mismo repartidor, por lo que se necesitaría un sistema de conducción de asistencia que procure evitar accidentes.
 
 Siendo seleccionado la experiencia de "madre nodriza", otro problema surgirá, el cómo llegarán los repartidores a ese punto y los problemas que ésto pueda causar ya que vienen de diferentes partes de la ciudad y área metropolitana, por lo que podrían afectar la logistica planificada de entrega.
+
+\textbf{Objetivo}
+
+El objetivo será, hacer que un sistema de vehículo automaticamente guiado, (AGV por sus siglas en inglés), sea implementado en el VUMI, para esto se necesitan varias cosas:
+
+\textbf{Accionamiento}
+
+Controlar velocidad de movimiento
+
+Controlar la dirección
+
+Controlar el frenado
+
+\textbf{Sensado}
+
+Conocer la velocidad del vehículo
+
+Conocer la posición angular del volante
+
+Conocer la inclinación del vehiculo para saber si no se ha caido
+
+Conocer si hay un obstaculo frente a él para saber si se debe frenar
+
+Seguir una trayectoria, ya sea por una línea negra en el piso y esta sea detectada por un sensor fotoeléctrico, por una linea magnética y sensar la variación magnética o alguna otra forma de seguimiento.
+
+\textbf{Procesamiento}
+
+Esto se realizará dados los datos sensados y se enviarán señales a los actuadores para ealizar una rutina definida.
+
+Solo será un sistema reactivo, es decir, reaccionará a ciertos eventos previstos, pero no tendrá sistema de inteligencia que genere que pueda resolver una problemática en particular.
+
+
+
 
 \section{CONOCER. Contexto, estado del arte, benchmarking, análogos y homólogos}
 
