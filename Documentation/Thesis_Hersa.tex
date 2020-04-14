@@ -1,215 +1,42 @@
 \documentclass[12pt,letterpaper]{book}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{makeidx}
-\usepackage{graphicx}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
-\usepackage{fancyhdr}
+%Colocando paquetes
+\input{Section_thesis/Package}
+
+%\makeatletter
+%\let\ps@plain\ps@empty
+%\makeatother
+
 \pagestyle{fancy}
-\fancyhead{} %Eliminar definiciones previas
-\fancyhead[R]{Diseño de un VUM para uso en paquetería: Aplicación de un sistema AGV} 
 \fancyfoot[C]{\thepage}
+\fancyhead[L]{\scriptsize \empty}
+\renewcommand{\headrulewidth}{0pt}
 
-
-%\includegraphics[scale=•]{•}
-
-\author{Sergio Hernández Sánchez}
-\title{Diseño de un Vehiculo Última Milla para uso en paquetería: Aplicación de un sistema AGV}
-
-\date{10 de marzo de 2020}
 \begin{document}
 
-\begin{titlepage}
-\begin{center}
-\includegraphics[scale=1]{Figures/Logo_azul.png}\\
-\vspace*{2\baselineskip}
-\begin{large}
-\textbf{UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO}
-\end{large}
-
-PROGRAMA DE MAESTRÍA Y DOCTORADO EN INGENIERÍA
-
-MECÁNICA – DISEÑO MECÁNICO
-
-\vspace*{7\baselineskip}
-
-DISEÑO DE UN VEHÍCULO DE ÚLTIMA MILLA PARA SU USO EN PAQUETERÍA: APLICACIÓN DE UN SUSTEMA AGV
-
-\vspace*{4\baselineskip}
-
-TESIS
-
-QUE PARA OPTAR POR EL GRADO DE:
-
-MAESTRO EN INGENIERÍA
-
-\vspace*{5\baselineskip}
-
-PRESENTA:
-
-SERGIO HERNÁNDEZ SÁNCHEZ
-
-\vspace*{4\baselineskip}
-
-TUTOR PRINCIPAL
-
-DR. ALEJANDRO C. RAMÍREZ REIVICH
-
-\vspace*{4\baselineskip}
-
-CIUDAD UNIVERSITARIA, CDMX, MARZO 2020
-
-\end{center}
-\end{titlepage}
-%\newpage
-
-\chapter*{AGRADECIMIENTOS}
-
-ASDASDASD
-\newpage
-
-\chapter*{RESUMEN}
-
-ASDGSTGHFDTRGSRV
-\newpage
-
+\frontmatter %Numerar con números romanos
+\include{Section_thesis/Title_page}
+\include{Section_thesis/Acknowledgment}
+\include{Section_thesis/Summary}
 \renewcommand{\contentsname}{TABLA DE CONTENIDO}
-\tableofcontents
-\thispagestyle{empty}
-\newpage
+\tableofcontentsñ
+\renewcommand{\headrulewidth}{0.5pt}
 
-\setcounter{page}{1}
-\chapter{DEFINICIÓN DEL PROYECTO}
-\section{Introducción}
-\section{Antecedentes}
-Última Milla y retos que enfrenta la paquetería
-\section{Métodología}
-Ciclos y funciones y Enfoque
-\section{Trabajo previo}
-Descripción de las tesis anteriores
-\section{Planteamiento del problema}
-¿Cuál es la problemática?
-\section{Objetivo}
-General y particulares
-\section{Alcances}
-A qué se llegará
-\section{Equipo de trabajo}
-Por etapas
-\newpage
-
-\chapter{CICLO 1. USUARIO}
-\section{Reto}
-\section{Usuario en contexto}
-\subsection{Observaciones}
-\subsection{Entrevistas}
-\subsection{Organizar y jerarquización de necesidades}
-\section{Soluciones actuales (mercado)}
-\section{Contexto pasado, presente y futuro}
-\subsection{Estadísticas, normas, reglamentos}
-\section{Factores críticos, hallazgos}
-\subsection{Necesidades seleccionadas}
-
-\newpage
-
-\chapter{CICLO 2. EXPERIENCIA}
-\section{Redefinición del reto}
-\section{Necesidad jerarquizada}
-\section{Objetivo (propuesta de valor)}
-\section{Requerimientos}
-\section{Escenarios}
-\section{Personajes}
-\section{Mapa de ruta}
-\section{Diseño de experiencias}
-\section{Nuevas tecnologías}
-\section{Factores críticos, hallazgos}
-
-\newpage
-
-\chapter{CICLO 3. PRODUCTO}
-\section{Redefinición del reto}
-\section{Principios de diseño}
-\section{Requerimientos y especificaciones}
-\section{Generación de conceptos}
-\section{Evaluación de conceptos}
-\section{Selección de concepto}
-
-\newpage
-
-\chapter{CICLO 4. PROTOTIPO}
-\section{Pruebas con usuarios}
-\section{Factores críticos y hallazgos}
-
-\newpage
-
-\chapter{IDEAS DE MI PARTE}
-\section{DEFINIR. Reto, problemática, objetivo}
-
-Un problema dificil de solucionar es la cultura deshonesta de algunos trabajadores, ya que terminan provocando problemas que afectan tanto la logistica de la entrega y producen perdidas económicas que afectan a la empresa de reparta y la empresa de venta.
-
-Algunos de los problemas reportados por los usuarios y cliente son los siguientes:
-
-Se roban las cosas
-
-Se roban paquetes
-
-Significan un gasto elevado para las empresas de paquetería
-
-Modifican sus rutas de entregas para ir a lugares de su interés como comer, visitar a su novia, mamá, etc.
-
-Ya que el vehículo tiene la capacidad de ir a más de 25 km/hr, puede ser una velocidad a la que sea peligroso para el mismo repartidor, por lo que se necesitaría un sistema de conducción de asistencia que procure evitar accidentes.
-
-Siendo seleccionado la experiencia de "madre nodriza", otro problema surgirá, el cómo llegarán los repartidores a ese punto y los problemas que ésto pueda causar ya que vienen de diferentes partes de la ciudad y área metropolitana, por lo que podrían afectar la logistica planificada de entrega.
-
-\textbf{Objetivo}
-
-El objetivo será, hacer que un sistema de vehículo automaticamente guiado, (AGV por sus siglas en inglés), sea implementado en el VUMI, para esto se necesitan varias cosas:
-
-\textbf{Accionamiento}
-
-Controlar velocidad de movimiento
-
-Controlar la dirección
-
-Controlar el frenado
-
-\textbf{Sensado}
-
-Conocer la velocidad del vehículo
-
-Conocer la posición angular del volante
-
-Conocer la inclinación del vehiculo para saber si no se ha caido
-
-Conocer si hay un obstaculo frente a él para saber si se debe frenar
-
-Seguir una trayectoria, ya sea por una línea negra en el piso y esta sea detectada por un sensor fotoeléctrico, por una linea magnética y sensar la variación magnética o alguna otra forma de seguimiento.
-
-\textbf{Procesamiento}
-
-Esto se realizará dados los datos sensados y se enviarán señales a los actuadores para ealizar una rutina definida.
-
-Solo será un sistema reactivo, es decir, reaccionará a ciertos eventos previstos, pero no tendrá sistema de inteligencia que genere que pueda resolver una problemática en particular.
+\mainmatter %Numerar con números arábigos
+\include{Section_thesis/Chapter1}
 
 
-
-
-\section{CONOCER. Contexto, estado del arte, benchmarking, análogos y homólogos}
-
-\section{GENERAR. Brainstorming}
-
-\section{PROBAR. Simuladores, maquetas, prototipos}
-
-\section{APRENDER. Análisis de hallazgos}
-
-\newpage
-
-\chapter{CONCLUSIONES}
-
-\chapter{TRABAJO A FUTURO}
+\fancyhead{} %Eliminar definiciones previas
+%\fancyhead[R]{Diseño de un VUM para uso en paquetería: Aplicación de un sistema AGV} 
+\fancyhead[R]{\scriptsize \leftmark}
+\fancyhead[L]{\scriptsize \empty}
+\include{Section_thesis/Chapter2}
+\include{Section_thesis/Chapter3}
+\include{Section_thesis/Chapter4}
+\include{Section_thesis/Chapter5}
+\include{Section_thesis/Chapter6}
+%\include{Section_thesis/Conclutions}
+%\include{Section_thesis/Future_work}
 
 
 
