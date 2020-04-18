@@ -13,33 +13,36 @@
 \renewcommand{\headrulewidth}{0pt}
 \usepackage[nottoc]{tocbibind}
 
+
 \begin{document}
 
-\frontmatter %Numerar con números romanos
+	\frontmatter %Numerar con números romanos
 \include{Section_thesis/Title_page}
-\include{Section_thesis/Acknowledgment}
-\include{Section_thesis/Summary}
-\renewcommand{\contentsname}{TABLA DE CONTENIDO}
-\tableofcontents
-\renewcommand{\headrulewidth}{0.5pt}
+%\include{Section_thesis/Acknowledgment}
+%\include{Section_thesis/Summary}
 
-\mainmatter %Numerar con números arábigos
+	\renewcommand{\contentsname}{TABLA DE CONTENIDO}
+\tableofcontents
+	\renewcommand{\headrulewidth}{0.5pt}
+
+	\mainmatter %Numerar con números arábigos
+
+
 %\include{Section_thesis/Chapter1}
 
-
-\fancyhead{} %Eliminar definiciones previas
-%\fancyhead[R]{Diseño de un VUM para uso en paquetería: Aplicación de un sistema AGV} 
-\fancyhead[R]{\scriptsize \leftmark}
-\fancyhead[L]{\scriptsize \empty}
-\include{Section_thesis/Chapter2}
-\include{Section_thesis/Chapter3}
-\include{Section_thesis/Chapter4}
+	\fancyhead{} %Eliminar definiciones previas
+	%\fancyhead[R]{Diseño de un VUM para uso en paquetería: Aplicación de 	un sistema AGV} 
+	\fancyhead[R]{\scriptsize \leftmark}
+	\fancyhead[L]{\scriptsize \empty}
+%\include{Section_thesis/Chapter2}
+%\include{Section_thesis/Chapter3}
+%\include{Section_thesis/Chapter4}
 \include{Section_thesis/Chapter5}
 
-%\include{Section_thesis/Conclutions}
-%\include{Section_thesis/Future_work}
+%\include{Section_thesis/Conclusions}
+%\include{Section_thesis/Future_work} 	
 
-\bibliographystyle{plain}
+	\bibliographystyle{plaindin}
 \bibliography{Biblio}
 
 

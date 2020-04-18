@@ -2,14 +2,14 @@
 
 \section{Redefinición del reto}
 
-Se plantea que al VUM se le añadan tecnologías que permitan eficientar el proceso de entrega de paquetería, una primera iteración puede ser la aplicación de un sistema AGV (\textit{Automatic Guided Vehicle}, por sus siglas en inglés). Esto con la idea de tener un primer acercamiento con tecnologías revolucionarias hoy en día, como lo son los vehículos autónomos.
+Se plantea que al VUM se le añadan tecnologías que permitan eficientar el proceso de entrega de paquetería, una primera iteración puede ser la aplicación de un sistema AGV (\textit{Automatic Guided Vehicle}, por sus siglas en inglés). Esto con la idea de tener un primer acercamiento con tecnologías revolucionarias que hoy en día se están desarrollando, como lo son los vehículos autónomos.
 
 \section{Problemática}
 
-Retomando algunas de las necesidades obtenidas de nuestros usuarios, nos dimos cuenta que derivan de situaciones culturales del escenario y contexto mismos. Siendo nuestro usuario principal en este ciclo, el cliente, que como se enunció anteriormente es la dueña de la empresa Re!, ya que enució algunas de las problemáticas siguientes:
+Retomando algunas de las necesidades obtenidas de nuestros usuarios, nos dimos cuenta que derivan de situaciones culturales del escenario y contexto mismos. Siendo nuestro usuario principal en este ciclo, el cliente, que como se enunció anteriormente es la dueña de la empresa Re!, quien enució algunas de las problemáticas siguientes:
 
 \begin{itemize}
-\item Los empleados no pueden acceder con mochilas porque se pueden robar los paquetes.
+\item Los empleados no pueden acceder con mochilas ni a la bodega ni a la camioneta porque se pueden robar los paquetes.
 
 \item Hacen mal uso del combustible del vehículo, ya sea porque se desvían de la ruta por intereses personales o porque cargan menos cantidad de éste, mientras que reportan haber comprado una mayor cantidad.
 
@@ -17,16 +17,51 @@ Retomando algunas de las necesidades obtenidas de nuestros usuarios, nos dimos c
 
 \item No es conveniente que el VUM tenga piezas que se quiten, ya que los mismos empleados podrían robárselas.
 
-\item Siendo seleccionado la experiencia de "madre nodriza", otro problema surgirá, el cómo llegarán los repartidores a ese punto y los problemas que ésto pueda causar ya que vienen de diferentes partes de la ciudad y área metropolitana, por lo que podrían afectar la logistica planificada de entrega.
+\item En la solución presentada en el capítulo de \textit{experiencia}, cuya solución implica llevar únicamente a los vehículos a un punto intermedio de las zonas de entrega, esto podría generar problemas en la logística, ya que los conductores tendrían que llegar a los puntos de de descarga de los vehículos, dificultando su acceso por cuestiones de movilidad.
 
 \end{itemize}
-Con estos hallazgos, se hace evidente que el vehículo y el proceso de entrega es altamente mejorable.
+Con estos hallazgos, se hace evidente que el vehículo y el proceso de entrega es altamente mejorable. por lo que se plantea que el una posible solución sea que dicho VUM sea no tripulado pudiendo entregar en un ambiente controlado.
 
 \section{Objetivo}
 
-Mejorar la eficiencia del sistema de entrega VUM, planteando la implementación de un sistema de Vehículo de Guiado Automático (AGV) en rutas controladas.\cite{yo}
+Mejorar la eficiencia del sistema de entrega VUM, planteando la implementación de un sistema de Vehículo de Guiado Automático (AGV) en rutas controladas.
+%\cite{yo}
 
-\section{CONOCER. Contexto, estado del arte, benchmarking, análogos y homólogos}
+\section{Productos en desarrollo}
+
+Algunos de los conceptos que se han ido desarrollando en los últimos años se presentaron en la sección 1.4, cuyo nombre es \textit{contexto pasado, presente futuro}. Si bien en este se presentan propuestas de vehículos de reparto tripulados de dos y tres ruedas, también se presentan algunos que se proyectaban como conceptos de solución no tripulada, como drones y robots. \\
+En esta seción presentaremos más en específico que se ha hecho en el ámbito de la róbotica para reparto.
+
+\subsection{Starship} 
+Esta empresa fue creada en 2014 y sólo cautro años implementó su negocio de entrega de comida y paquetería por medio de un robot móvil autónomo de seis ruedas en la universidad de Milton Keynes, en Reino Unido. Este es navega por las banquetas, detecta obstáculos, personas y demás imprevistos que se presenten en su recorrido. A la fecha se realiza entregas en otras universidades, acumulando más de 100,000 entregas \cite{starship}.
+	\begin{figure}[hbtp]
+
+	\centering
+	\includegraphics[scale=0.6]{Figures/Starship_Picture.jpg}
+	\caption{Robot autónomo de Starship\cite{starship_picture}.} 
+	\end{figure}
+
+Algunas de las características de este robot son las siguientes \cite{starship_feature}:
+
+\begin{itemize}
+\item Sensores: Ultrasónico, camera de tiempo de vuelo (ToF camera), cámara estereo.
+
+\item Características importantes: Utilizando dichos sensores e inteligencia artificial, puede mapear y entender el entorno, permitiéndole detectar objetos y saber su ubicación.
+
+\item Dimensiones: 55.9 cm de altura, 68.9 cm de largo y 55.9 cm de ancho.
+
+\item Peso: 20 kg.
+
+\item Velocidad: 6 km/h.
+
+\item Seguridad: El compartimento de carga está bloqueado, solo se puede abrir con la aplicación del teléfono inteligente del receptor. Además, el robot tiene seguimiento de su ubicación por parte de la empresa y del usuario, al llegar al destino, le enviará una notificación \cite{starship}.
+\end{itemize}
+
+
+
+
+
+
 
 \subsection{Por definir}
 \begin{itemize}
