@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}CICLO 4. PROTOTIPO}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Redefinici\IeC {\'o}n del reto}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Problem\IeC {\'a}tica}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivo}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Productos en desarrollo}{2}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Starship}{2}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Amazon Scout}{3}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Por definir}{3}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}GENERAR. Generaci\IeC {\'o}n de conceptos}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}GENERAR. Selecci\IeC {\'o}n de conceptos}{4}{section.1.6}
+\contentsline {section}{\numberline {1.7}GENERAR. Desarrollo de la propuesta}{4}{section.1.7}
+\contentsline {section}{\numberline {1.8}PROBAR. Simuladores, maquetas, prototipos}{4}{section.1.8}
+\contentsline {section}{\numberline {1.9}APRENDER. An\IeC {\'a}lisis de hallazgos}{4}{section.1.9}
+\contentsline {chapter}{Bibliograf\'{\i }a}{5}{chapter*.2}
