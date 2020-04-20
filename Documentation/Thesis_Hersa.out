@@ -1,14 +1,68 @@
-\BOOKMARK [0][-]{chapter.1}{CICLO 4. PROTOTIPO}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Redefinici\363n del reto}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Problem\341tica}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Objetivo}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{Productos en desarrollo}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.4.1}{Starship}{section.1.4}% 6
-\BOOKMARK [2][-]{subsection.1.4.2}{Amazon Scout}{section.1.4}% 7
-\BOOKMARK [2][-]{subsection.1.4.3}{Por definir}{section.1.4}% 8
-\BOOKMARK [1][-]{section.1.5}{GENERAR. Generaci\363n de conceptos}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.6}{GENERAR. Selecci\363n de conceptos}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.7}{GENERAR. Desarrollo de la propuesta}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.8}{PROBAR. Simuladores, maquetas, prototipos}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.9}{APRENDER. An\341lisis de hallazgos}{chapter.1}% 13
-\BOOKMARK [0][-]{chapter*.2}{Bibliograf\355a}{}% 14
+\BOOKMARK [0][-]{chapter.1}{DEFINICI\323N DEL PROYECTO}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Antecedentes}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{M\351todolog\355a}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Trabajo previo}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Planteamiento del problema}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Objetivo}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{Alcances}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{Equipo de trabajo}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{CICLO 1. USUARIO}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Reto}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Usuario en contexto}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Observaciones}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Entrevistas}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Organizar y jerarquizaci\363n de necesidades}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Soluciones actuales \(mercado\)}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.4}{Contexto pasado, presente y futuro}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.4.1}{Estad\355sticas, normas, reglamentos}{section.2.4}% 18
+\BOOKMARK [1][-]{section.2.5}{Factores cr\355ticos, hallazgos}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{Necesidades seleccionadas}{section.2.5}% 20
+\BOOKMARK [0][-]{chapter.3}{CICLO 2. EXPERIENCIA}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Redefinici\363n del reto}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Necesidad jerarquizada}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Objetivo \(propuesta de valor\)}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.4}{Requerimientos}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.5}{Escenarios}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.6}{Personajes}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.7}{Mapa de ruta}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.8}{Dise\361o de experiencias}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.9}{Nuevas tecnolog\355as}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.10}{Factores cr\355ticos, hallazgos}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{CICLO 3. PRODUCTO}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Redefinici\363n del reto}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Principios de dise\361o}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Requerimientos y especificaciones}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{Generaci\363n de conceptos}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Evaluaci\363n de conceptos}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.6}{Selecci\363n de concepto}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.7}{Construcci\363n de un simulador*}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.8}{Resultado de las pruebas}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.9}{Aprendizajes y hallazgos}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{CICLO 4. PROTOTIPO}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Redefinici\363n del reto}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{Problem\341tica}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.3}{Objetivo}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.4}{Productos en desarrollo}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.4.1}{Starship}{section.5.4}% 47
+\BOOKMARK [2][-]{subsection.5.4.2}{Amazon Scout}{section.5.4}% 48
+\BOOKMARK [2][-]{subsection.5.4.3}{Robby}{section.5.4}% 49
+\BOOKMARK [2][-]{subsection.5.4.4}{Eliport}{section.5.4}% 50
+\BOOKMARK [2][-]{subsection.5.4.5}{Eliport}{section.5.4}% 51
+\BOOKMARK [2][-]{subsection.5.4.6}{Postmates}{section.5.4}% 52
+\BOOKMARK [2][-]{subsection.5.4.7}{Marble}{section.5.4}% 53
+\BOOKMARK [2][-]{subsection.5.4.8}{Boxbot}{section.5.4}% 54
+\BOOKMARK [2][-]{subsection.5.4.9}{Kiwi}{section.5.4}% 55
+\BOOKMARK [2][-]{subsection.5.4.10}{Teleretail}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.11}{Rev-1}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.12}{Neolix}{section.5.4}% 58
+\BOOKMARK [2][-]{subsection.5.4.13}{Robomart}{section.5.4}% 59
+\BOOKMARK [2][-]{subsection.5.4.14}{AnyBotics}{section.5.4}% 60
+\BOOKMARK [2][-]{subsection.5.4.15}{Mercedes}{section.5.4}% 61
+\BOOKMARK [1][-]{section.5.5}{Por definir}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.6}{GENERAR. Generaci\363n de conceptos}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.7}{GENERAR. Selecci\363n de conceptos}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.8}{GENERAR. Desarrollo de la propuesta}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.9}{PROBAR. Simuladores, maquetas, prototipos}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.10}{APRENDER. An\341lisis de hallazgos}{chapter.5}% 67
+\BOOKMARK [0][-]{chapter*.6}{Bibliograf\355a}{}% 68

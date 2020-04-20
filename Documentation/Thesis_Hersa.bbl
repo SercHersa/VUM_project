@@ -33,7 +33,18 @@
 \newblock \emph{Starship robot}.
 \newblock \url{robots.ieee.org/robots/starship/}
 
-\bibitem[5]{starship}
+\bibitem[5]{robby}
+\textsc{Nichols}, Greg:
+\newblock \emph{Robby Technologies}.
+\newblock \url{robby.io/}
+
+\bibitem[6]{robby_zdnet}
+\textsc{Nichols}, Greg:
+\newblock \emph{Robby the last-mile delivery robot gets an update}.
+\newblock
+  \url{www.zdnet.com/google-amp/article/robby-the-last-mile-delivery-robot-gets-an-update/}
+
+\bibitem[7]{starship}
 \textsc{technologies}, Starship:
 \newblock \emph{Starship webpage}.
 \newblock \url{www.starship.xyz/}
