@@ -1,0 +1,300 @@
+Robot: Aquel que pueda realizar las 3 primitivas de la robótica:
+*Sensar: Adquirir información del ambiente que sea útil en la toma de decisiones.
+*Planear: Generar subtareas con base en la información sensada y/o en representaciones internas del ambiente.
+*Activar: Modificar el ambiente con alguno de los dispositivos del robot encaminado al lodro de un objetivo.
+
+Resumido: Uso de sensores, procesadores y actuadores para lograr el objetivo definido
+
+Sensores
+-Propioceptivos vs. exteroceptivos
+-Activos y pasivos
+***Humanos tenemos 8 sensores
+
+Procesadores
+-CPU: Seriales y complejas
+-GPU: Paralelo, operaciones sencillas pero veloces
+-Microcontroladores: Comunicación a periféricos
+-FPGA: Armar el hardware
+-DSP: Procesar señales en punto flotante
+
+Actuadores
+-Elécticos
+-Hidráulicos
+-Neumáticos
+
+
+Planeación del movimientos
+1. Localización: Saber dónde está el robot (Configuración)
+2. Mapeo: Representación del ambiente
+3. Navegación: Generar ruta para moverme a un objetivo
+4. Barrido: Esta incluida en las demás. Pasar un sensor o un actuador por todas las posiciones del ambiente
+
+
+						20/08/2019
+- Configuración q
+Descripción de los puntos en el espacio que ocupa el robot
+
+- Espacio de configuraciones <q elementro de Q>
+El conjunto de todas las posibles configuraciones. Se describe mediante variables.
+
+- Localización
+Consiste en determinar la configuración q
+
+- Navegación -> Ruta o trayectoria
+Espacio de configuraciones está dado por Q = Qf U Qo
+Navegación consiste en encontrar:
+[0,1] -> Qf
+Qf: Espacio libre
+Qo: Espacio ocupado
+
+- Mapeo -> Mapa
+Consiste en encontrar:
+Q = Qf U Qo
+
+- Características del robot
+* Grados de libertad: Número de parámetros independientes necesarios para determinar una configuración.
+Para un robot móvil que se mueve en el plano se necesitan 3 GDL (X,Y y Theta), para uno que se mueve en el espacio, se necesitan 6 GDL's (3 para posición [X, Y, Z] y 3 para orientación [theta, alfa, beta]). Son diferentes que las variables de estado-> La cantidad mínima de variables independientes que describen el estado dinámico del sistema.
+* Restricciones de movimiento: 
++Holonómicas: Es una restricción que se puede expresar en términos de la variables que determinan la configuración o sus derivadas.
+Ej: Movimiento en un plano o robot omnidireccional (suecas también es omnidireccional)
+Z = cte
+Zp = 0
++No holonómicas: Es una restricción que sólo se puede expresar en términos de las derivadas.
+Ej: Vehículo Ackerman
+
+- Características de los algoritmos
+*Óptimo: Si minimiza una función de costo. Puede ser distancia, tiempo, energía, costo computacional (la primera a minimizar es la distancia) 
+*Costo computacional: Tiempo de ejecución o cantidad de memoria ocupada. Notación asintótica. Generalmente se describe mediante la notación de O (alta), Omega (baja) o (intermedia)
+*Completitud: Un algoritmo es completo si garantiza encontrar una solución cuando ésta existe.
+*En línea o fuera de línea: Si se ejecuta mientras el robot se está moviendo, si se planea y luego se ejecuta, es fuera de línea.
+
+- Mapa: Es una representación del espacio que es útil en la toma de decisiones (en la planeación de movimientos). Pueden ser:
+*Geométricos: Representación que describe al espacio
+*Topológicos: Refleja las conexiones o relaciones de los puntos de interes.
+*Semánticos: Contiene afirmaciones o hechos.
+
+- Celdas de ocupación: es una discretización del espacio con una determinada resolución. A cada celda se le asigna un valor pElemento[0,1] que indica su nivel de ocupación
+
+Implementado de forma real, ocupan valores enteros mapeados de 0-1 sería:
+0 = libre
+100 = ocupado
+-1 = no se sabe
+
+Se define la resolución o tamaño de la celda y se define el origen donde empieza el mapa (Ox, Oy). Posteriormente se numeran las celdas y estás serán representadas por medio de un arreglo.
+
+27/08/2019
+-Planeación de rutas basadas en búsqueda en grafos
+Se considera a las celdas de ocupación como un grafo donde cada celda es un nodo que está conectado con las celdas vecinas libres.
+Para definir los nodos vecinos se pueden usar conectividad 4 u 8.
+
+-De celdas a XY:
+X= (cell%width)*resolution+originx
+Y= (cell//width)*resolution+originy
+
+De XY a celdas:
+cell=[(x-originx)/resolution+(y-originy)/resolution]*width
+
+- Conjuntos importantes:
+Lista abierta: conjunto de nodos expandidos pero no conocidos
+Lista cerrada: nodos conocidos
+
+- Paso generales:
+*Agregar nodo inicial a la lista abierta
+*WHILE: Lista abierta =/ vacío AND *n* =/ del nodo meta (Goal)
+	-Elegir siguiente nodo *n* de lista abierta (con algún criterio) {Los criterios son: Breadth First Search, Depth First Search, Dijktra, A*; siendo estos dos últimos óptimos bajo ciertos parámetros}
+	-Agregar vecinos de *n* a la lista abierta (si no están en lista abierta OL, ni en lista cerrada CL)
+	-Quitar *n* de la lista abierta y agregarlo a la lista cerrada
+*IF *n* == Goal
+	RETURN TRUE
+ ELSE
+	RETURN FALSE/ERROR
+Algoritmo basado en búsqueda son completos, por lo que siempre encontrará solución, si no encuentra es que no hay camino
+
+Ej. Con política de agarrar el primero que se agregó (FIFO) y Búsqueda a lo ancho
+OL={E3,F2,E1,B7,C6,D5,E4}
+CL={A2,A3,B2,A1,A4,C2,B1,A5,C3,D2,C1,A6,D3,F2,D1,A7,B6,D4}
+
+Ej. Con política de agarrar el primero que se agregó (LILO) y Búsqueda a lo ancho
+
+Cola
+pila
+cola con prioridad
+
+
+						03/09/2019
+
+BFS
+
+x<-start //nodo inicial
+n[x]<- 0 //Distancia
+OL<-{x} //Lista abierta
+
+
+
+A* Ayuda a expandir menos, por ello se ejecuta más rápido
+Simempre y cuando h sea facil de estimar
+
+para implementar BFS se usan colas
+en profundidada se usa pila
+y djastra se usa una cola con prioridad
+
+5 primera practica
+12 segunda incompleta
+17 no hay clase
+19 la 2 completa
+
+
+HACER QUE EL ROBOT SE MUEVA
+
+Diseñar una ley de control realimentado para que el control sea robusto ante incertidumbres y perturbaciones
+Lo primero que se busca es tener un modelo, no importa que sea muy bueno, porque se realimentará
+
+Modelo en varialbes de estado
+
+xp=Ax+Bu
+xp=f(x,u) x,u es un vector 
+
+	  x
+xp = 	  y
+	  theta
+
+u' =	  VL	Que estarían dadas por v y omega medidas sobre el robot
+	  VR
+
+xp = vcos(theta)
+yp = vsin(theta)
+thetap= omega
+
+
+v=(VL+VR)/2
+
+omega=(VR-VL)/D
+
+v =	1/2	1/2	VL
+omega =	-1/D	1/D	VR
+
+inversa
+VL =	1	-D/2	V
+VR =	1	D/2	omega
+
+
+e_theta(angulo) = atan2(yg-yr, xg-xr) - theta_r
+
+
+
+
+
+alfa grande decrece lento
+alfa chica decrece rapido
+
+beta grande cambio lento
+beta chica cambio rapido
+
+Desventajas
+Si se pasa, el error de angulo cambiará de 0 a 180 y girará muy rápido
+
+Ventaja
+Al no usar un PID da una accion de controll muy grande y puede dañar los motores
+
+
+
+EVASIÓN DE OBSTÁCULOS			19/sep/2019
+
+Campos potenciales
+
+Modelar el ambiente en el que vamos a trabajar como un campo de energía potencial. A cada punto del espacio se le puede designar un escalar, a cada punto se le asigna un escalar que es una energía apotencial a diseñar.
+
+La fuerza F = Grad U, determina la dirección de movimiento del robot.
+
+El campo se diseña de modo que tenga un mínimo en el punto meta y máximos en los obstáculos a evadir.
+
+Si el robot se mueve siguiendo el descenso del gradiente, entonces se moverá hacia el punto meta mientras se aleja de los obstáculos
+
+-Método de los campos atractivos y repulsivos
+
+U = Uatractivo + Urepulsivos = Uatt + Urej = minimo global en el punto meta + maximo global en cada uno de los obstaculos
+
+Se usa un cono
+Uatt = Alfa[x-xg,y-yg]
+
+Grad.Uatt = alfa[(q-qg)/(||q-qg||)]
+
+Grad.Urej = beta/[(||q-qg||)+E]*[[(q-qg)/(||q-qg||)]]
+
+
+Fuerzas Propuestas:
+
+Fatt = alfa[(q-qg)/(||q-qg||)]
+
+Frej = Beta[raiz[(1/d)-(1/do)]]*(q0-q)/(||q0-q||)	if d<do
+	0						otherwise
+
+d0 dist de influencia
+d distancia al obstaculo
+
+Martes 24 practica 3
+Jueves 26 dudas de practica 4
+Martes 1 practica 4
+
+
+PSEUDOCÓDIGO CAMPOS POTENCIALES
+
+WHILE ||gradienteU||>tol:
+	Fatt =
+	Frej =
+	P_PF = Pr - Epsilon(Fatt+1/N Sumatoria Frej_i)
+	[v W]¨T = control.law(P_Pff Pr)
+
+N Numero de lecturas del laser
+P_PF sera un vetor X y Y
+
+							24/sep/2019
+
+Practica 3 -> pseudocódigo
+
+tol=0.000001
+smooth-grad=req.path
+
+mag-grad=tol+1
+
+while mag.grad>tol:
+	mag.grad=0
+	for i Elem [1,N-1]
+		xni=smooth-path.poses[i].pose.position.x
+		yni=smooth-path.poses[i].pose.position.y
+		xni=smooth-path.poses[i-1].pose.position.x
+		yni=smooth-path.poses[i-1].pose.position.y
+		xni=smooth-path.poses[i+1].pose.position.x
+		yni=smooth-path.poses[i+1].pose.position.y
+		xoi=req.path.poses[i].pose.position.x
+		yoi=req.path.poses[i].pose.position.y
+		grad.x-=Epsilon*(alfa(2xni-(xni-1)-(xni+1))+beta(xni-xoi)
+		grad.y-=Epsilon*(alfa(2yni-(yni-1)-(yni+1))+beta(yni-yoi)
+		mag.grad+=grad.x2+grad.y2
+		xni-=gradx
+		yni-=grady
+	End For
+	mag.grad=sqrt(mag.grad)
+END While
+
+
+Jueves 3-oct 2da vuelta P02, P03 y P04
+
+**LOCALIZACIÓN**
+
+Se puede usar:
+-Filtro de Kalman Extendido->Se le llama local: Es un observador con dinámica
+Convergue para cualquier condicion inicial si es un sistema linela, pero nuwtro sistema no lo es, por lo que la estimación inicial (inicial guest) debe estar cerca del valor inicial. Otr alimitante es que asumo que la incertidumbre de la posicion o ruido que agrago a mis sistema, tienen una distribucion normal. Computacionamente es muy barato computacionalmente
+-Filtro de Particulas-> es global
+Este si se puede poner como valor inicial de robot una posicion muy diferente a la que es, y tarde o tempreano se convergerá, por lo que este si soluciona el problema del robot secuestrado, pero computacionalmente es muy costoso.
+
+
+**EXTENDED KALMAN FILTER (EKF)**
+
+Sirve para filtrar señales cuando se conoce su modelo
+
+Se tienen dos funtes de info, lo que dice el sensor y lo que dice el modelo, y éste caracteriza bajo criterios a quien le hago caso
+
+Se tienen que asocuair una covarianza al modelo y al sensor para saer que incertidumbre tienen cada uno
+
+Para corregir se tomara lo que esteime u lo que medí
